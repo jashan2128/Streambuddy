@@ -1,0 +1,11 @@
+import random
+
+def generate_title(game, style, friends):
+    templates = [
+        f"{style} {game} Stream 🔥",
+        f"Playing {game} | {style} vibes 🎮",
+        f"{game} with {'Friends' if friends else 'Solo'} 😎",
+        f"Late Night {game} Stream 🌙",
+        f"{style} {game} Chaos 😂"
+    ]
+    return random.choice(templates)

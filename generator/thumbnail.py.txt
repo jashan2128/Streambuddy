@@ -1,0 +1,11 @@
+import random
+
+def generate_thumbnail_text(game):
+    texts = [
+        f"{game.upper()} LIVE",
+        "THIS GOT CRAZY 😳",
+        "INSANE MATCH 🔥",
+        "FUN WITH FRIENDS 😂",
+        "DON'T MISS THIS!"
+    ]
+    return random.choice(texts)

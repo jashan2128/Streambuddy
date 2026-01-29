@@ -1,0 +1,10 @@
+def generate_description(game, style, friends):
+    short = f"Join me for a {style.lower()} {game} live stream!"
+    
+    long = (
+        f"Welcome to the stream! 🎮\n\n"
+        f"Today we are playing {game} in a {style.lower()} style. "
+        f"{'Playing with friends for extra fun!' if friends else 'Solo grind today!'}\n\n"
+        f"Drop a like, subscribe, and enjoy the stream ❤️"
+    )
+    return short, long

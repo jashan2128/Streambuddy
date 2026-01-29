@@ -1,0 +1,10 @@
+def generate_hashtags(game):
+    base = game.lower().replace(" ", "")
+    hashtags = [
+        f"#{base}",
+        "#gaming",
+        "#gaminglive",
+        "#youtubelive",
+        "#indiangamer"
+    ]
+    return " ".join(hashtags)

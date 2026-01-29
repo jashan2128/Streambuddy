@@ -1,0 +1,36 @@
+from generator.title import generate_title
+from generator.description import generate_description
+from generator.hashtags import generate_hashtags
+from generator.thumbnail import generate_thumbnail_text
+
+print("🎮 Welcome to StreamBuddy 🎮\n")
+
+game = input("Enter game name: ")
+style = input("Stream style (Chill/Funny/Competitive): ")
+friends_input = input("Playing with friends? (y/n): ")
+
+friends = friends_input.lower() == "y"
+
+print("\n✨ Generating Stream Content...\n")
+
+title = generate_title(game, style, friends)
+short_desc, long_desc = generate_description(game, style, friends)
+hashtags = generate_hashtags(game)
+thumbnail = generate_thumbnail_text(game)
+
+print("📌 TITLE:")
+print(title)
+
+print("\n📝 SHORT DESCRIPTION:")
+print(short_desc)
+
+print("\n📄 FULL DESCRIPTION:")
+print(long_desc)
+
+print("\n#️⃣ HASHTAGS:")
+print(hashtags)
+
+print("\n🖼️ THUMBNAIL TEXT:")
+print(thumbnail)
+
+print("\n✅ Done! Happy Streaming 🚀")

@@ -3,6 +3,7 @@
 StreamBuddy is a Python command-line app that helps YouTube streamers
 generate cool stream titles, fun descriptions, trendy hashtags,
 and catchy thumbnail text — all based on user input.
+gg gamers have a good day
 
 ---
 
